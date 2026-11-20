@@ -1,0 +1,11 @@
+{
+  "enabled": false,
+  "model_path": "Models/vits-piper-pt_BR-faber-medium/pt_BR-faber-medium.onnx",
+  "tokens_path": "Models/vits-piper-pt_BR-faber-medium/tokens.txt",
+  "data_dir": "Models/vits-piper-pt_BR-faber-medium/espeak-ng-data",
+  "lexicon_path": "",
+  "volume": 0.85,
+  "speed": 1.0,
+  "speaker_id": 0
+}
+

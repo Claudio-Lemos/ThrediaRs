@@ -1,0 +1,19 @@
+[package]
+name = "brain"
+version.workspace = true
+edition.workspace = true
+
+[features]
+default = []
+llama = ["dep:llama-cpp-2", "dep:self_cell"]
+
+[dependencies]
+anyhow = "1.0"
+evolve = { path = "../../evolve" }
+llama-cpp-2 = { version = "0.1", optional = true }
+memchr = "2.7"
+parking_lot = "0.12"
+regex = "1.12"
+rust-stemmers = "1.2"
+self_cell = { version = "1.2", optional = true }
+serde = { version = "1.0", features = ["derive"] }

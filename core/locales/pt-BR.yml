@@ -1,0 +1,123 @@
+greeting: "Olá! Sou a %{name}. Digite algo para conversar ou envie `ajuda` para ver os comandos rápidos (status, debug mem, limpar)."
+
+dialog:
+  select_gguf_title: "Selecionar Modelo GGUF"
+  select_gguf_filter: "Modelo GGUF"
+  select_onnx_title: "Selecionar Voz ONNX"
+  select_onnx_filter: "Modelo ONNX"
+  select_slm_title: "Selecionar Modelo SLM / Amígdala (GGUF ou ONNX)"
+  select_slm_filter: "Modelo SLM/ONNX"
+
+sender:
+  user: "Você"
+  system: "Sistema"
+
+status:
+  swapping: "● Trocando modelo..."
+  thinking: "● Pensando..."
+  online: "● Online"
+  thinking_short: "Pensando..."
+  typing: "%{name} (digitando...)"
+
+tab:
+  brain: "Cérebro"
+  memory: "Memória"
+  system: "Sistema"
+  voice: "Voz"
+  logs: "Logs"
+
+memory:
+  facts_count: "Fatos (%{count})"
+  categories_title: "Categorias (Sujeitos)"
+  all_categories: "Todos (%{count})"
+  history_count: "Histórico (%{count})"
+  reload_tooltip: "Recarregar do SQLite"
+  open_sql: "Abrir SQL"
+  open_sql_tooltip: "Abrir arquivo SQLite da memória (data/memory.db).\nAviso: não abrirá se não houver um programa compatível instalado (ex.: DB Browser for SQLite)."
+  filter: "Filtrar:"
+  add_fact: "➕ Adicionar Novo Fato"
+  subject: "Sujeito:"
+  attribute: "Atributo:"
+  value: "Valor:"
+  confidence: "Confiança"
+  save_fact: "Salvar Fato"
+  editing_fact: "Editando Fato #%{id}"
+  conf_short: "Conf."
+  save: "Salvar"
+  cancel: "Cancelar"
+  edit: "Editar"
+  delete: "Excluir"
+  clear_history: "Limpar Todo o Histórico"
+
+brain:
+  llm_section: "Seleção de Modelo LLM & Hot Swap"
+  select_gguf: "Selecionar .gguf..."
+  refresh_list: "Atualizar Lista"
+  move_to_modelos: "Mover modelo escolhido para pasta 'modelos'"
+  backend: "Backend:"
+  apply_hot_swap: "Aplicar Hot Swap"
+  active_model: "Ativo: %{name}"
+  slm_section: "Seleção de SLM / Amígdala (Hot Swap)"
+  select_slm: "Selecionar SLM..."
+  apply_hot_swap_slm: "Aplicar Hot Swap SLM"
+  active_slm: "SLM Ativa: %{name}"
+  params_section: "Parâmetros do LLM & Sampler"
+  temperature: "Temperatura"
+  ctx_size: "Contexto (n_ctx)"
+  show_thinking: "Mostrar <think>"
+  restore_defaults: "Restaurar Padrões"
+  vad_section: "Estado Emocional (VAD)"
+  valence: "Valência: %{val}"
+  arousal: "Excitação: %{val}"
+  dominance: "Dominância: %{val}"
+  amygdala_verdict: "Último Veredito da Amígdala"
+  amygdala_processing: "Amígdala processando..."
+
+system:
+  language: "Idioma:"
+  prompt_section: "Prompt do Sistema & Modelos de IA"
+  prompt_preset: "Modelo / Preset:"
+  prompt_builtin_group: "Modelos Padrão"
+  prompt_custom_group: "Prompts Customizados"
+  prompt_placeholders: "Placeholders: {name}, {role}, {mood} (salvo automaticamente)"
+  prompt_name_hint: "Nome do prompt customizado..."
+  prompt_save: "Salvar Prompt"
+  prompt_delete: "Excluir"
+  telemetry_section: "Telemetria em Tempo Real"
+  max_temp: "Temperatura Máx.: %{val} °C"
+  whisper_acc: "Precisão Whisper: %{val}%"
+  ml_rate: "Sucesso Ações ML: %{val}%"
+  power_save: "Power Save Mode (manutenção a cada 30s)"
+  chart_title: "Gráfico: CPU (%) & RAM do Processo"
+  collecting_samples: "Coletando amostras (a cada 10s)..."
+  latency_title: "Latência por Operação (ms)"
+  no_metrics: "Nenhuma métrica registrada ainda."
+  blind_vault: "The Blind Vault (Diag.json / Modo Sonho)"
+  export_diag: "Exportar Diag.json"
+  run_dream: "Gerar Modo Sonho"
+
+voice:
+  title: "Controle de Voz (TTS Piper / Rodio)"
+  enable_tts: "Ativar TTS"
+  current_onnx: "Modelo ONNX atual:"
+  select_onnx: "Selecionar .onnx..."
+  stop_speech: "Parar Fala"
+
+logs:
+  search: "Buscar:"
+
+chat:
+  input_hint: "Digite sua mensagem ou `ajuda`..."
+  send: "Enviar"
+
+cmd:
+  status_title: "Status do Sistema:"
+  status_mood: "Humor VAD"
+  status_reflex: "Reflexo"
+  status_amygdala: "Amígdala"
+  memories_header: "Memórias registradas (%{count}):"
+  no_facts: "Nenhum fato armazenado no SQLite."
+  memory_query_error: "Erro ao consultar memórias: %{err}"
+  memory_unavailable: "Memória SQLite indisponível."
+  history_cleared: "Histórico de conversa no SQLite e KV Cache limpos com sucesso."
+

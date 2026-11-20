@@ -1,0 +1,30 @@
+[package]
+name = "core"
+version.workspace = true
+edition.workspace = true
+
+[features]
+default = ["llama"]
+llama = ["brain/llama"]
+
+[dependencies]
+body = { path = "../BODY/body" }
+brain = { path = "../BRAIN/brain" }
+eframe = "0.26"
+egui = "0.26"
+evolve = { path = "../evolve" }
+memory = { path = "../BRAIN/memory" }
+mimalloc = { version = "0.1", default-features = false }
+parking_lot = "0.12"
+regex = "1.12"
+rfd = "0.14"
+rust-i18n = "4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+speech = { path = "../BODY/speech" }
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "sync", "time"] }
+
+[package.metadata.i18n]
+available-locales = ["pt-BR", "en"]
+default-locale = "pt-BR"
+load-path = "locales"

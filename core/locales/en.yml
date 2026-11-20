@@ -1,0 +1,123 @@
+greeting: "Hello! I am %{name}. Type something to chat or send `help` to see quick commands (status, debug mem, clear)."
+
+dialog:
+  select_gguf_title: "Select GGUF Model"
+  select_gguf_filter: "GGUF Model"
+  select_onnx_title: "Select ONNX Voice"
+  select_onnx_filter: "ONNX Model"
+  select_slm_title: "Select SLM / Amygdala Model (GGUF or ONNX)"
+  select_slm_filter: "SLM/ONNX Model"
+
+sender:
+  user: "You"
+  system: "System"
+
+status:
+  swapping: "● Swapping model..."
+  thinking: "● Thinking..."
+  online: "● Online"
+  thinking_short: "Thinking..."
+  typing: "%{name} (typing...)"
+
+tab:
+  brain: "Brain"
+  memory: "Memory"
+  system: "System"
+  voice: "Voice"
+  logs: "Logs"
+
+memory:
+  facts_count: "Facts (%{count})"
+  categories_title: "Categories (Subjects)"
+  all_categories: "All (%{count})"
+  history_count: "History (%{count})"
+  reload_tooltip: "Reload from SQLite"
+  open_sql: "Open SQL"
+  open_sql_tooltip: "Open memory SQLite file (data/memory.db).\nWarning: it will not open if no compatible program is installed (e.g. DB Browser for SQLite)."
+  filter: "Filter:"
+  add_fact: "➕ Add New Fact"
+  subject: "Subject:"
+  attribute: "Attribute:"
+  value: "Value:"
+  confidence: "Confidence"
+  save_fact: "Save Fact"
+  editing_fact: "Editing Fact #%{id}"
+  conf_short: "Conf."
+  save: "Save"
+  cancel: "Cancel"
+  edit: "Edit"
+  delete: "Delete"
+  clear_history: "Clear All History"
+
+brain:
+  llm_section: "LLM Model Selection & Hot Swap"
+  select_gguf: "Select .gguf..."
+  refresh_list: "Refresh List"
+  move_to_modelos: "Move chosen model to 'modelos' folder"
+  backend: "Backend:"
+  apply_hot_swap: "Apply Hot Swap"
+  active_model: "Active: %{name}"
+  slm_section: "SLM / Amygdala Selection (Hot Swap)"
+  select_slm: "Select SLM..."
+  apply_hot_swap_slm: "Apply SLM Hot Swap"
+  active_slm: "Active SLM: %{name}"
+  params_section: "LLM & Sampler Parameters"
+  temperature: "Temperature"
+  ctx_size: "Context (n_ctx)"
+  show_thinking: "Show <think>"
+  restore_defaults: "Restore Defaults"
+  vad_section: "Emotional State (VAD)"
+  valence: "Valence: %{val}"
+  arousal: "Arousal: %{val}"
+  dominance: "Dominance: %{val}"
+  amygdala_verdict: "Last Amygdala Verdict"
+  amygdala_processing: "Amygdala processing..."
+
+system:
+  language: "Language:"
+  prompt_section: "System Prompt & AI Model Templates"
+  prompt_preset: "Template / Preset:"
+  prompt_builtin_group: "Default Model Templates"
+  prompt_custom_group: "Custom Prompts"
+  prompt_placeholders: "Placeholders: {name}, {role}, {mood} (auto-saved)"
+  prompt_name_hint: "Custom prompt name..."
+  prompt_save: "Save Prompt"
+  prompt_delete: "Delete"
+  telemetry_section: "Real-Time Telemetry"
+  max_temp: "Max Temp: %{val} °C"
+  whisper_acc: "Whisper Accuracy: %{val}%"
+  ml_rate: "ML Action Success: %{val}%"
+  power_save: "Power Save Mode (maintenance every 30s)"
+  chart_title: "Chart: CPU (%) & Process RAM"
+  collecting_samples: "Collecting samples (every 10s)..."
+  latency_title: "Latency per Operation (ms)"
+  no_metrics: "No metrics recorded yet."
+  blind_vault: "The Blind Vault (Diag.json / Dream Mode)"
+  export_diag: "Export Diag.json"
+  run_dream: "Run Dream Mode"
+
+voice:
+  title: "Voice Control (TTS Piper / Rodio)"
+  enable_tts: "Enable TTS"
+  current_onnx: "Current ONNX model:"
+  select_onnx: "Select .onnx..."
+  stop_speech: "Stop Speech"
+
+logs:
+  search: "Search:"
+
+chat:
+  input_hint: "Type your message or `help`..."
+  send: "Send"
+
+cmd:
+  status_title: "System Status:"
+  status_mood: "VAD Mood"
+  status_reflex: "Reflex"
+  status_amygdala: "Amygdala"
+  memories_header: "Stored memories (%{count}):"
+  no_facts: "No facts stored in SQLite."
+  memory_query_error: "Error querying memories: %{err}"
+  memory_unavailable: "SQLite memory unavailable."
+  history_cleared: "SQLite chat history and KV Cache cleared successfully."
+
